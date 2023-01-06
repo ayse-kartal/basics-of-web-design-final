@@ -1,7 +1,7 @@
 @import url("https://font.goggleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
 :root{
-  --main-color:#120346;
+  --main-color:#efedf4;
   --black-color:#121212;
   --border:0.1rem solid rgba(255 ,255, 255 ,0.4);
 }
@@ -10,12 +10,11 @@
   font-family: 'Poppins ', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  transition: 0.2s ease;
+  
 }
  /*! base html codes*/
  html{
@@ -34,14 +33,13 @@ section{
   padding: 3.5rem 7%;
 }
 
-
 .btn{
-  margin:1rem ;
-  display:inline-block;
+  margin: 1rem;
+  display: inline-block;
   padding: 2rem 3.75rem;
   border-radius: 30rem;
   font-size: 1.7rem;
-  color:#fff;
+  color: rgb(214, 11, 11);
   background-color: var(--black-color);
 }
 
@@ -63,6 +61,7 @@ section{
   position: sticky;
   top:0 ;
   z-index: 1000;
+  
 } 
 
 .header .navbar a {
@@ -78,13 +77,9 @@ section{
   padding-bottom: 0.5rem;
 }
 
-.header .buttons button {
-  cursor: pointer;
-  font-size: 2.5rem;
-  margin-left: 2rem;
-   background-color: transparent;
-     
-}
+
+
+
 
 /*! header end*/
 
@@ -118,6 +113,477 @@ section{
 }
 /*! home end*/
 
+
+
+.bro{
+  display: grid;
+  grid-template-columns: 300px 120px 1fr;
+  gap: 300px;
+
+}
+
+
+
+.dropdown-menu{
+  margin: 0%;
+  padding: 0%;
+}
+
+
+.menusayfası{
+  margin: 0%;
+  padding: 0%;
+
+}
+
+
+
+
+
+.footer {
+  background-color: #414141;
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/* footer left*/
+
+.footer .footer-left {
+  width: 33%;
+  padding-right: 15px;
+}
+
+.footer .about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/** buton **/
+.fa-instagram {
+  background-color: #3b5998;
+  transform: rotate(360deg);
+  font-size: 20px;
+  color: #262725;
+  border: solid 2px #ffffff;
+  height: 31px;
+  width: 31px;
+  text-align: center;
+  border-radius: 100px;
+  line-height: 27px;
+  margin-right: 15px;
+  transition: 1s;
+  background: #fff;
+  float: left
+}
+  
+
+.fa-github {
+  background: #125688;
+  color: white;
+  font-size: 20px;
+  color: #262725;
+  border: solid 2px #ffffff;
+  height: 31px;
+  width: 31px;
+  text-align: center;
+  border-radius: 100px;
+  line-height: 27px;
+  margin-right: 15px;
+  transition: 1s;
+  background: #fff;
+
+}
+/** buton **/
+ 
+
+  
+
+
+
+/* footer center*/
+
+.footer .footer-center {
+  width: 30%;
+}
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+ 
+
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+
+}
+
+.footer .footer-center p a {
+  color: #0099ff;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+
+/* footer right*/
+
+.footer .footer-right {
+  width: 35%;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer h2 span {
+  color: #0099ff;
+}
+
+.footer .menu {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .menu a:hover {
+  color: #0099ff;
+}
+
+.footer .name {
+  color: #0099ff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    font-size: 14px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+}
+
+
+.col-md-12{
+  width: 100px;
+  height: 200px;
+}
+
+.img-responsive{
+  width: 260px;
+  height: 1000px;
+}
+
+
+
+/*!  MENÜ BAŞLA*/
+
+.menu .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(30rem ,1fr));
+  gap: 1.5rem;
+}
+
+.menu .box-container .box{
+  padding: 3rem;
+  background-color: rgb(115, 42, 42);
+  border-radius: 3rem;
+  background-color: rgb(9, 12, 107);
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  }
+
+
+.menu .box-container .box-head img{
+  width: 100%;
+  object-fit: cover;
+}
+
+/*bitir*/
+
+
+/*!  MENÜ BAŞLA*/
+
+
+
+
+
+
+.card {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  border: 3px solid rgb(186, 179, 179);
+  position: relative;
+  margin: 25px 30px;
+  }
+
+
+.card:hover{
+  transform: translateY(-20px);
+  border-color: #12882d;
+}
+
+
+
+
+ 
+
+
+    .card .card-bottom {
+      position: absolute;
+      bottom: 26px;
+      
+      
+
+    }
+
+
+   
+
+/*!  MENÜ bitir*/
+
+/*!  menü foto başla*/
+
+.card.card-1{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2014/06/mercimek-corbasi-yemekcom.jpg);
+}
+
+.card.card-2{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2014/06/ezogelin-corbasi-yemekcom.jpg);
+}
+.card.card-3{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2019/05/tarhana-corbasi-yemekcom.jpg);
+}
+
+.card.card-4{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2014/04/su-boregi-tarifi-yeni.jpg);
+}
+
+.card.card-5{
+  background-image: url(https://cdn.yemek.com/mncrop/940/625/uploads/2015/06/tepsi-boregi-tarifi-1000.jpg);
+}
+
+.card.card-6{
+  background-image: url(https://im.haberturk.com/2020/04/20/ver1587362373/2651781_810x458.jpg);
+}
+
+.card.card-7{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2014/06/menemen-yemekcom.jpg);
+}
+
+.card.card-8{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2014/07/zeytinyagli-yaprak-sarmasi-yemekcom.jpg);
+}
+
+.card.card-9{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2015/01/biber-dolmasi-yemekcom.jpg);
+}
+
+.card.card-10{
+  background-image: url(https://cdn.yemek.com/mncrop/940/625/uploads/2014/06/mercimek-koftesi-yeni-ytk.jpg);
+}
+
+.card.card-11{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2015/07/taze-fasulye-yemekcom.jpg);
+}
+
+.card.card-12{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2015/10/barbunya-yemekcom.jpg);
+}
+
+.card.card-13{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2015/01/imam-bayildi-yeni-one-cikan.jpg);
+}
+
+.card.card-14{
+  background-image: url(https://img.youtube.com/vi/W6t7NvVKOpY/sddefault.jpg);
+}
+
+.card.card-15{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2022/03/enginar-dolmasi-one-cikan.jpg);
+}
+.card.card-16{
+  background-image: url(https://mutfaktaki.com/wp-content/uploads/2020/11/B205999A-9288-4B1B-88BF-7C1F5934B4F8-740x740.jpeg);
+}
+
+.card.card-17{
+  background-image: url(https://i.nefisyemektarifleri.com/2021/01/28/kiymali-manti-hingel-6.jpg);
+}
+
+.card.card-18{
+  background-image: url(https://ferishtah.com/wp-content/uploads/2019/04/Past%C4%B1rmal%C4%B1-Kuru-Fasulye.jpg);
+}
+
+.card.card-19{
+  background-image: url(https://i.lezzet.com.tr/images-xxlarge/nohut-yemegi-620c3ece-e046-44da-b008-dc3ebf38c007);
+}
+
+.card.card-20{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2015/06/turlu-tarifi-yeni-one-cikan.jpg);
+}
+
+.card.card-21{
+  background-image: url(https://i.lezzet.com.tr/images-xxlarge-recipe/tavuklu-sebzeli-guvec-f5a00713-469e-474b-8925-685e9bb587cf.jpg);
+}
+
+.card.card-22{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2015/01/patlican-musakka-yemekcom.jpg);
+}
+
+.card.card-23{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2022/08/100-gram-kiymayla-karniyarik-one-cikan.jpg);
+}
+
+.card.card-24{
+  background-image: url(https://cdn.yemek.com/mncrop/940/625/uploads/2019/05/tas-kebabi.jpg);
+}
+
+.card.card-25{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2022/01/250gram-kiymayla-2-tepsi-lahmacun-one-cikan.jpg);
+}
+
+.card.card-26{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/832/uploads/2021/04/hunkar-begendi-2-tarifi-duygus.jpg);
+}
+
+.card.card-27{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/832/uploads/2021/04/hunkar-begendi-2-tarifi-duygus.jpg);
+}
+
+.card.card-28{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2017/05/alinazik-tarifi.jpg);
+}
+
+.card.card-29{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2021/10/kiymali-pide-tek.jpg);
+}
+
+.card.card-30{
+  background-image: url(https://cdn.yemek.com/mncrop/940/625/uploads/2016/05/adana-kebap-one-cikan.jpg);
+}
+
+.card.card-31{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2018/07/bby-tandir-yemekcom.jpg);
+}
+
+.card.card-32{
+  background-image: url(https://i.lezzet.com.tr/images-xxlarge-recipe/siirt-perde-pilavi-d7db62f1-7371-4875-a968-46737950c21e.jpg);
+}
+
+
+.card.card-33{
+  background-image: url(https://i.lezzet.com.tr/images-xxlarge-recipe/izmir_kofte-22742567-6176-4e66-945b-8b3499f98bb3.jpg);
+}
+
+.card.card-34{
+  background-image: url(https://i.ytimg.com/vi/BOGjH4U4z0w/maxresdefault.jpg);
+}
+
+.card.card-35{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2021/12/iskender-fatma.jpg);
+}
+
+.card.card-36{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2017/09/cantik-tarifi.jpg);
+}
+
+.card.card-37{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2015/03/ytk-firin-sutlac-site.jpg);
+}
+
+.card.card-38{
+  background-image: url(https://cdn.yemek.com/mnresize/940/940/uploads/2017/06/fistikli-baklava-yemekcom1.jpg);
+}
+
+.card.card-39{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2020/10/sut-helvasi-site-yeni-son.jpg);
+}
+
+.card.card-40{
+  background-image: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2021/02/kabak-tatlisi-yemekcom.jpg);
+}
+
+
+
+
+/*!  menü foto bitir*/
 
 
 
